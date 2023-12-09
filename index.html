@@ -1,0 +1,104 @@
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <headerclass= "container">
+          <h1 id="title" class="text center"> Formulario de Pesquisa</h1>
+          <p id="descriçao" class="descriçao do texto central">
+            Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma
+          </p>
+          </header>
+          <form id="formulario-pesquisa">
+            <div class="form-grupo">
+              <label id="etiqueta-nome" for="nome">Nome Completo</label>
+              <input type="texto" name="nome" id="nome" class="form-control" placeholder="Coloque seu nome" required />
+            </div>
+            <div class="form-grupo">
+              <label id="etiqueta-email" for="email">Email</label>
+              <input type="Email" name="email" id="email" class="form-control" placeholder="Ingrese seu Email" required />
+            </div>
+            <div class="form-grupo">
+              <label id="etiqueta-numero" for="number">Idade <span class="dica">(Opcional)</span></label>
+              <input type="number" name="idade" id="number" min="10" max="99" class="form-control" placeholder="Idade">
+            </div>
+            <div clas="form-grupo">
+              <p> Qual das opções abaixo descreve sua situação atual</p>
+              <select id="dropdown" name="ocupação" class="form-control" required>
+                <option diabled select value> Seleccione uma opção</option>
+                <option value="estudante">Estudante</option>
+                <option value="trabalho">Trabalho de Periodo Completo</option>
+                <option value="estagio">Estagio</option>
+                <option value="prefiro-no">Prefiro Não Informar</option>
+                <option value="outros">Outros</option>
+              </select>
+            </div>
+            <div class="form-grupo">
+              <p> Voce recomendaria essa empresa para um amigo?
+                <label>
+                  <input name="recomendaçao" value="definitivamente" type="radio" class="input-radio"  />Definitivamente </label>
+                <label>
+                  <input name="recomedaçao" value="talvez" type="radio" class="input-radio" />Talvez
+                </label>
+                <label>
+                  <input nome="recomendaçao" value="nunca" type="radio" class="input-radio" />Nunca
+                </label>
+              </p>
+            </div>
+      
+            <div class="form-grupo">
+              <p>
+                Qual e o seu recurso favorito dessa empresa?
+              </p>
+              <select id="amei" name="amei" class="form-control" required>
+                <option disabled select value>Escolha uma opção</option>
+                <option value="Desafios">Desafios</option>
+                <option value="Projetos">Projetos</option>
+                <option value="Comunidade">Comunidade</option>
+                <option value="Codigo aberto">Codigo aberto</option>
+              </select>
+            </div>
+            <div class="form-grupo">
+              <p>
+                O que você gostaria de ver melhorado?
+                <span class="dica">
+                  (Marque todas as opções aplicaveis)
+                </span>
+              </p>
+              <label><input name="preferencia" value="projetos front-end" type="checkbox" class="input-checkbox" />Projetos Front-End</label>
+              <label> <input name="preferencia" value="projetos back-end" type="checkbox" class="input-checkbox" />Projetos Back End</label>
+              <label>
+                <input name="preferencias" value="visualização de dados" type="checkbox" class="input-checkbox" />Visualização de dados
+              </label>
+              <label>
+                <input name="preferencias" value="desafios" type="checkbox" class="input-checkbox" />Desafios
+              </label>
+              <label>
+                <input name="preferencias" value="comunidade-codigo-aberto" type="checkbox" class="input-checkbox" />Comunidade Codigo Aberto
+              </label>
+              <label>
+                <input name="Preferencias" value="salas-ajuda-gitter" type="checkbox" class="input-checkbox" />Salas de Ajuda do Gitter
+              </label>
+              <label>
+                <input name="preferencias" value="Videos" type="checkbox" class="input-checkbox" />Videos
+              </label>
+              <label>
+                <input name="preferencias" value="cursos-adicionais" type="checkbox" class="input-checkbox" />Cursos Adicionais
+              </label>
+            </div>
+            <div class="form-grupo">
+              <p>
+                Algum comentário ou sugestão?
+              </p>
+              <textarea id="comentarios" class="input-area" name="comentarios" placeholder="Deixe seu comentario aqui..."></textarea>
+            </div>
+            <div class="form-grupo">
+              <button type="submit" id="submit" class="submit-button">Enviar</button>
+            </div>
+        </form>
+    </body>
